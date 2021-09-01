@@ -1,0 +1,81 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.26.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉clojure-sandbox.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉clojure-sandbox.core꞉> 
+45
+clj꞉clojure-sandbox.core꞉> 
+45
+clj꞉clojure-sandbox.core꞉> 
+; Execution error (NullPointerException) at clojure-sandbox.core/eval7405$fn (form-init15862288525469000111.clj:148).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉clojure-sandbox.core꞉> 
+; Execution error (NullPointerException) at clojure-sandbox.core/eval7409$fn (form-init15862288525469000111.clj:148).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉clojure-sandbox.core꞉> 
+{:age 3}
+{:age 90}
+{:age 23}
+(nil nil nil)
+clj꞉clojure-sandbox.core꞉> 
+{:age 90}
+; Execution error (ClassCastException) at clojure-sandbox.core/eval7436$fn (form-init15862288525469000111.clj:157).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉clojure-sandbox.core꞉> 
+{:age 90}
+{:age 23}
+2
+clj꞉clojure-sandbox.core꞉> 
+90
+23
+2
+clj꞉clojure-sandbox.core꞉> 
+116
+clj꞉clojure-sandbox.core꞉> 
+; Syntax error compiling at (src/clojure_sandbox/core.clj:158:8).
+; Unable to resolve symbol: emtpy? in this context
+clj꞉clojure-sandbox.core꞉> 
+; Syntax error compiling at (src/clojure_sandbox/core.clj:158:8).
+; Unable to resolve symbol: emtpy? in this context
+clj꞉clojure-sandbox.core꞉> 
+#'clojure-sandbox.core/sum
+clj꞉clojure-sandbox.core꞉> 
+#'clojure-sandbox.core/my-sum
+clj꞉clojure-sandbox.core꞉> 
+; Execution error (StackOverflowError) at clojure-sandbox.core/sum (form-init15862288525469000111.clj:154).
+; null
+clj꞉clojure-sandbox.core꞉> 
+; Execution error (StackOverflowError) at clojure-sandbox.core/sum (form-init15862288525469000111.clj:154).
+; null
+clj꞉clojure-sandbox.core꞉> 
+#'clojure-sandbox.core/my-sum
+clj꞉clojure-sandbox.core꞉> 
+15
+clj꞉clojure-sandbox.core꞉> 
+36
+clj꞉clojure-sandbox.core꞉> 
+45
+clj꞉clojure-sandbox.core꞉> 
+#'clojure-sandbox.core/my-sum
+clj꞉clojure-sandbox.core꞉> 
+45
+clj꞉clojure-sandbox.core꞉> 
+#'clojure-sandbox.core/my-sum
+clj꞉clojure-sandbox.core꞉> 
+45
+clj꞉clojure-sandbox.core꞉> 

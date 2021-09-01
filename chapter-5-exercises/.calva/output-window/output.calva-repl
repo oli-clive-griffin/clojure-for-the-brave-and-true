@@ -1,0 +1,149 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.26.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉chapter-5-exercises.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉chapter-5-exercises.core꞉> 
+#'chapter-5-exercises.core/character
+clj꞉chapter-5-exercises.core꞉> 
+#'chapter-5-exercises.core/attr
+clj꞉chapter-5-exercises.core꞉> 
+#'chapter-5-exercises.core/c-int
+clj꞉chapter-5-exercises.core꞉> 
+#'chapter-5-exercises.core/c-str
+clj꞉chapter-5-exercises.core꞉> 
+#'chapter-5-exercises.core/c-dex
+clj꞉chapter-5-exercises.core꞉> 
+10
+clj꞉chapter-5-exercises.core꞉> 
+4
+clj꞉chapter-5-exercises.core꞉> 
+#'chapter-5-exercises.core/my-comp
+clj꞉chapter-5-exercises.core꞉> 
+; Execution error (ClassCastException) at chapter_5_exercises.core$my_comp$fn__7427/doInvoke (form-init11797482460843379423.clj:21).
+; class clojure.lang.ArraySeq cannot be cast to class clojure.lang.IFn (clojure.lang.ArraySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉chapter-5-exercises.core꞉> 
+#'chapter-5-exercises.core/my-comp
+clj꞉chapter-5-exercises.core꞉> 
+; Execution error (ClassCastException) at chapter_5_exercises.core$my_comp$fn__7434/doInvoke (form-init11797482460843379423.clj:21).
+; class clojure.lang.ArraySeq cannot be cast to class clojure.lang.IFn (clojure.lang.ArraySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉chapter-5-exercises.core꞉> 
+#'chapter-5-exercises.core/my-comp
+clj꞉chapter-5-exercises.core꞉> 
+; Execution error (ClassCastException) at chapter_5_exercises.core$my_comp$fn__7441/doInvoke (form-init11797482460843379423.clj:21).
+; class clojure.lang.ArraySeq cannot be cast to class clojure.lang.IFn (clojure.lang.ArraySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉chapter-5-exercises.core꞉> 
+#'chapter-5-exercises.core/my-comp
+clj꞉chapter-5-exercises.core꞉> 
+5
+clj꞉chapter-5-exercises.core꞉> 
+10
+clj꞉chapter-5-exercises.core꞉> 
+60
+clj꞉chapter-5-exercises.core꞉> 
+{:name "Smooches McCutes", :attributes {:intelligence 10, :strength 2, :dexterity 5}}
+clj꞉chapter-5-exercises.core꞉> 
+chapter-5-exercises.core
+clj꞉chapter-5-exercises.core꞉> 
+{c-str #'chapter-5-exercises.core/c-str,
+ character #'chapter-5-exercises.core/character,
+ attr #'chapter-5-exercises.core/attr,
+ c-dex #'chapter-5-exercises.core/c-dex,
+ my-comp #'chapter-5-exercises.core/my-comp,
+ c-int #'chapter-5-exercises.core/c-int}
+clj꞉chapter-5-exercises.core꞉> 
+{primitives-classnames #'clojure.core/primitives-classnames,
+ +' #'clojure.core/+',
+ Enum java.lang.Enum,
+ decimal? #'clojure.core/decimal?,
+ restart-agent #'clojure.core/restart-agent,
+ sort-by #'clojure.core/sort-by,
+ macroexpand #'clojure.core/macroexpand,
+ ensure #'clojure.core/ensure,
+ chunk-first #'clojure.core/chunk-first,
+ eduction #'clojure.core/eduction,
+ tree-seq #'clojure.core/tree-seq,
+ unchecked-remainder-int #'clojure.core/unchecked-remainder-int,
+ seq #'clojure.core/seq,
+ reduce #'clojure.core/reduce,
+ InternalError java.lang.InternalError,
+ when-first #'clojure.core/when-first,
+ find-ns #'clojure.core/find-ns,
+ get-thread-bindings #'clojure.core/get-thread-bindings,
+ NullPointerException java.lang.NullPointerException,
+ contains? #'clojure.core/contains?,
+ every? #'clojure.core/every?,
+ proxy-mappings #'clojure.core/proxy-mappings,
+ keep-indexed #'clojure.core/keep-indexed,
+ cond->> #'clojure.core/cond->>,
+ subs #'clojure.core/subs,
+ ref-min-history #'clojure.core/ref-min-history,
+ set #'clojure.core/set,
+ take-last #'clojure.core/take-last,
+ InheritableThreadLocal java.lang.InheritableThreadLocal,
+ bit-set #'clojure.core/bit-set,
+ reader-conditional #'clojure.core/reader-conditional,
+ gen-class #'clojure.core/gen-class,
+ qualified-keyword? #'clojure.core/qualified-keyword?,
+ while #'clojure.core/while,
+ ->Eduction #'clojure.core/->Eduction,
+ butlast #'clojure.core/butlast,
+ satisfies? #'clojure.core/satisfies?,
+ Class java.lang.Class,
+ line-seq #'clojure.core/line-seq,
+ c-str #'chapter-5-exercises.core/c-str,
+ unchecked-subtract-int #'clojure.core/unchecked-subtract-int,
+ *print-namespace-maps* #'clojure.core/*print-namespace-maps*,
+ take-nth #'clojure.core/take-nth,
+ first #'clojure.core/first,
+ re-groups #'clojure.core/re-groups,
+ Error java.lang.Error,
+ NoSuchFieldException java.lang.NoSuchFieldException,
+ seq? #'clojure.core/seq?,
+ dec' #'clojure.core/dec',
+ ns-unmap #'clojure.core/ns-unmap,
+ ...}
+clj꞉chapter-5-exercises.core꞉> 
+; Syntax error reading source at (REPL:119:6).
+; Map literal must contain an even number of forms
+clj꞉test.ns꞉> 
+(def asdf 4)
+#'test.ns/asdf
+clj꞉test.ns꞉> 
+(in-ns chapter-5-exercises.core
+
+       )
+; Syntax error (ClassNotFoundException) compiling at (.calva/output-window/output.calva-repl:127:1).
+; chapter-5-exercises.core
+clj꞉test.ns꞉> 
+(in-ns chapter-5-exercises.core)
+; Syntax error (ClassNotFoundException) compiling at (.calva/output-window/output.calva-repl:133:1).
+; chapter-5-exercises.core
+clj꞉test.ns꞉> 
+(in-ns 'chapter-5-exercises.core)
+#namespace[chapter-5-exercises.core]
+clj꞉chapter-5-exercises.core꞉> 
+asdf
+; Syntax error compiling at (.calva/output-window/output.calva-repl:1:8010).
+; Unable to resolve symbol: asdf in this context
+clj꞉chapter-5-exercises.core꞉> 
+(in-ns 'test.ns)
+#namespace[test.ns]
+clj꞉test.ns꞉> 
+asdf
+4
+clj꞉test.ns꞉> 

@@ -1,6 +1,7 @@
-(ns peg-thing.core
-  (require [clojure.set :as set])
-  (declare successful-move prompt-move game-over query-rows))
+(ns peg-thing.core)
+(require '[clojure.set :as set])
+(declare successful-move prompt-move game-over query-rows)
+
 
 (defn foo
   "I don't do a whole lot."
@@ -127,11 +128,6 @@
 (defn place-peg
   [board pos]
   (assoc-in board [pos :pegged] true))
-;; (pegged? (place-peg (remove-peg test-board 9) 9) 9)
-;; (reduce (fn [acc func]
-;;           (func acc 9))
-;;         test-board
-;;         [remove-peg place-peg pegged?])
 
 (defn move-peg
   [board p1 p2]
@@ -170,7 +166,7 @@
 
 (def alpha-start 97)
 (def alpha-end 123)
-(def letters (cycle (map (comp str char) (range alpha-start alpha-end))))
+(def letters (map (comp str char) (range alpha-start alpha-end)))
 (def pos-chars 3)
 
 (flatten (repeat 2 [1 2 3]))
@@ -214,7 +210,78 @@
           (range 1 (inc (:rows board)))))
 (spit "test.txt" (render-board (remove-pegs (create-board 6) [4 5 13])))
 
-(defn render )
+(defn print-board
+  [board]
+  (doseq [row-num (range 1 (inc (:rows board)))]
+    (println (render-row board row-num))))
+;; (print-board (remove-pegs test-board [1 5 9]))
 
+(defn letter->pos
+  [letter]
+  (inc (- (int (first letter)) alpha-start)))
+(letter->pos "c")
 
+(defn get-input
+  ([] (get-input nil))
+  ([default]
+   (let [input (clojure.string/trim (read-line))]
+     (if (empty? input)
+       default
+       (clojure.string/lower-case input)))))
+(get-input)
 
+(defn characters-as-strings
+  [str]
+  (filter
+   (fn [char] (Character/isLetter char))
+   str))
+(characters-as-strings "adsf335 2z")
+
+(defn user-entered-valid-move
+  [board]
+  (println "invalid move")
+  (prompt-move board))
+
+(defn user-entered-invalid-move
+  [board]
+  (if (can-move? board)
+    (prompt-move board)
+    (game-over board)))
+
+(defn prompt-move
+  [board]
+  (println "\nThe board:")
+  (print-board board)
+  (println "what's your move? enter two letters")
+  (let [input (map letter->pos (characters-as-strings (get-input)))]
+    (if-let [new-board (make-move board (first input) (second input))]
+      (user-entered-valid-move new-board)
+      (user-entered-invalid-move board))))
+
+(defn prompt-empty-peg
+  [board]
+  (println "here's your board")
+  (print-board board)
+  (println "what peg would you like to remove")
+  (prompt-move (remove-peg board (letter->pos (get-input "e")))))
+
+(defn prompt-rows
+  []
+  (println "how many rows")
+  (let [rows (Integer. (get-input 5))
+        board (create-board rows)]
+    (prompt-empty-peg board)))
+
+(defn game-over
+  [board]
+  (let [remaining-pegs (count (filter :pegged (vals board)))]
+    (println "game over, you had " remaining-pegs " pegs remaining")
+    (print-board board)
+    (println "would you like to play again? [y/y]")
+    (let [input (get-input "y")]
+      (if (= input "y")
+        (prompt-rows)
+        (do (println "Bye!")
+            (System/exit 0))))))
+
+(prompt-rows)

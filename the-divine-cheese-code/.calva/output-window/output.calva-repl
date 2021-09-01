@@ -1,0 +1,258 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.26.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉the-divine-cheese-code.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.visualisation.svg꞉> 
+#'the-divine-cheese-code.visualisation.svg/latlng->point
+clj꞉the-divine-cheese-code.visualisation.svg꞉> 
+#'the-divine-cheese-code.visualisation.svg/points
+clj꞉the-divine-cheese-code.visualisation.svg꞉> 
+; Execution error (IllegalArgumentException) at the-divine-cheese-code.core/eval7428 (form-init4410031889413635245.clj:2).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉the-divine-cheese-code.core꞉> 
+; Execution error (ClassCastException) at the-divine-cheese-code.core/eval7430 (form-init4410031889413635245.clj:3).
+; class java.lang.String cannot be cast to class clojure.lang.Symbol (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.Symbol is in unnamed module of loader 'app')
+clj꞉the-divine-cheese-code.core꞉> 
+; Execution error (IllegalArgumentException) at the-divine-cheese-code.core/eval7432 (form-init4410031889413635245.clj:2).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+; Execution error (IllegalArgumentException) at the-divine-cheese-code.core/eval7444 (form-init4410031889413635245.clj:2).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉the-divine-cheese-code.core꞉> 
+; Execution error (IllegalArgumentException) at the-divine-cheese-code.core/eval7446 (form-init4410031889413635245.clj:2).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉the-divine-cheese-code.core꞉> 
+; Execution error (IllegalArgumentException) at the-divine-cheese-code.core/eval7448 (form-init4410031889413635245.clj:2).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/heists
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/-main
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/heists
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.visualisation.svg/points
+clj꞉the-divine-cheese-code.visualisation.svg꞉> 
+#'the-divine-cheese-code.visualisation.svg/latlng->point
+clj꞉the-divine-cheese-code.visualisation.svg꞉> 
+#'the-divine-cheese-code.visualisation.svg/points
+clj꞉the-divine-cheese-code.visualisation.svg꞉> 
+#'the-divine-cheese-code.core/-main
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.visualisation.svg/latlng->point
+clj꞉the-divine-cheese-code.visualisation.svg꞉> 
+#'the-divine-cheese-code.core/-main
+clj꞉the-divine-cheese-code.core꞉> 
+#function[the-divine-cheese-code.visualisation.svg/points]
+clj꞉the-divine-cheese-code.core꞉> 
+50.95, 6.97 47.37, 8.55 43.3, 5.37 47.37, 8.55 41.9, 12.45
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+; Syntax error compiling at (src/the_divine_cheese_code/core.clj:2:1).
+; Unable to resolve symbol: svg in this context
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/heists
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/-main
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/-main
+clj꞉the-divine-cheese-code.core꞉> 
+true
+clj꞉the-divine-cheese-code.core꞉> 
+; Syntax error macroexpanding clojure.core/ns at (src/the_divine_cheese_code/core.clj:1:1).
+; ((:require [the-divine-cheese-code.visualisation.svg :as svg :refer points])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉the-divine-cheese-code.core꞉> 
+; Syntax error macroexpanding clojure.core/ns at (src/the_divine_cheese_code/core.clj:1:1).
+; ((:require [the-divine-cheese-code.visualisation.svg :refer points])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉the-divine-cheese-code.core꞉> 
+; Syntax error macroexpanding clojure.core/ns at (src/the_divine_cheese_code/core.clj:1:1).
+; ((:require (quote [the-divine-cheese-code.visualisation.svg :refer points]))) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉the-divine-cheese-code.core꞉> 
+; Syntax error macroexpanding clojure.core/ns at (src/the_divine_cheese_code/core.clj:1:1).
+; ((:require [(quote the-divine-cheese-code.visualisation.svg) :refer (quote points)])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉the-divine-cheese-code.core꞉> 
+; WARNING: min already refers to: #'clojure.core/min in namespace: the-divine-cheese-code.visualization.svg, being replaced by: #'the-divine-cheese-code.visualization.svg/min
+; Syntax error compiling at (src/the_divine_cheese_code/visualisation/svg.clj:12:10).
+; Unable to resolve symbol: comparator-over-maps in this context
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+; WARNING: max already refers to: #'clojure.core/max in namespace: the-divine-cheese-code.visualization.svg, being replaced by: #'the-divine-cheese-code.visualization.svg/max
+; Syntax error compiling at (src/the_divine_cheese_code/visualisation/svg.clj:13:10).
+; Unable to resolve symbol: comparator-over-maps in this context
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+nil
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/comparator-over-maps
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/min
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/max
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+{:lat 1, :lng 2}
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+{:lat 9, :lng 9}
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+{:lat 9, :lng 9}
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/scale
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/translate-to-00
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+{:a 1, :b 8}
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+{:a 1, :b -2}
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+{:a 1, :b 8}
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+{:a 1, :b 8}
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/scale
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/scale
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+nil
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+nil
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+; Syntax error compiling at (src/the_divine_cheese_code/visualisation/svg.clj:63:8).
+; Unable to resolve symbol: line in this context
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/transform
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+; Syntax error compiling at (src/the_divine_cheese_code/visualisation/svg.clj:63:8).
+; Unable to resolve symbol: line in this context
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/transform
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+; Syntax error compiling at (src/the_divine_cheese_code/visualisation/svg.clj:63:8).
+; Unable to resolve symbol: line in this context
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+nil
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/comparator-over-maps
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/min
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/max
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/translate-to-00
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/scale
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/latlng->point
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/points
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/line
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/transform
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.visualization.svg/xml
+clj꞉the-divine-cheese-code.visualization.svg꞉> 
+#'the-divine-cheese-code.core/url
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/template
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/-main
+clj꞉the-divine-cheese-code.core꞉> 
+; WARNING: min already refers to: #'clojure.core/min in namespace: the-divine-cheese-code.core, being replaced by: #'the-divine-cheese-code.visualization.svg/min
+; Execution error (IllegalStateException) at the-divine-cheese-code.core/eval7641$loading (form-init4410031889413635245.clj:1).
+; latlng->point already refers to: #'the-divine-cheese-code.visualisation.svg/latlng->point in namespace: the-divine-cheese-code.core
+clj꞉the-divine-cheese-code.core꞉> 
+; WARNING: min already refers to: #'clojure.core/min in namespace: the-divine-cheese-code.core, being replaced by: #'the-divine-cheese-code.visualization.svg/min
+; Execution error (IllegalStateException) at the-divine-cheese-code.core/eval7647$loading (form-init4410031889413635245.clj:1).
+; latlng->point already refers to: #'the-divine-cheese-code.visualisation.svg/latlng->point in namespace: the-divine-cheese-code.core
+clj꞉the-divine-cheese-code.core꞉> 
+; WARNING: min already refers to: #'clojure.core/min in namespace: the-divine-cheese-code.core, being replaced by: #'the-divine-cheese-code.visualization.svg/min
+; Execution error (IllegalStateException) at the-divine-cheese-code.core/eval7653$loading (form-init4410031889413635245.clj:1).
+; latlng->point already refers to: #'the-divine-cheese-code.visualisation.svg/latlng->point in namespace: the-divine-cheese-code.core
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/heists
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/url
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/url
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/template
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/-main
+clj꞉the-divine-cheese-code.core꞉> 
+#function[the-divine-cheese-code.visualization.svg/xml]
+clj꞉the-divine-cheese-code.core꞉> 
+; Syntax error compiling at (src/the_divine_cheese_code/core.clj:44:5).
+; No such namespace: browse
+clj꞉the-divine-cheese-code.core꞉> 
+; Syntax error macroexpanding clojure.core/ns at (src/the_divine_cheese_code/core.clj:1:1).
+; ((:require [clojure.java.browse :as browse the-divine-cheese-code.visualization.svg :refer [xml]])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉the-divine-cheese-code.core꞉> 
+; Syntax error reading source at (REPL:3:70).
+; Unmatched delimiter: ]
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/heists
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/url
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/template
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/-main
+clj꞉the-divine-cheese-code.core꞉> 
+; Execution error (IllegalAccessError) at the-divine-cheese-code.core/eval7686$loading (form-init4410031889413635245.clj:1).
+; xml does not exist
+clj꞉the-divine-cheese-code.core꞉> 
+; Execution error (IllegalAccessError) at the-divine-cheese-code.core/eval7692$loading (form-init4410031889413635245.clj:1).
+; xml does not exist
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.core꞉> 
+; Execution error (IllegalAccessError) at the-divine-cheese-code.core/eval7708$loading (form-init4410031889413635245.clj:1).
+; xml does not exist
+clj꞉the-divine-cheese-code.core꞉> 
+; Execution error (IllegalAccessError) at the-divine-cheese-code.core/eval7714$loading (form-init4410031889413635245.clj:1).
+; xml does not exist
+clj꞉the-divine-cheese-code.core꞉> 
+; Execution error (IllegalAccessError) at the-divine-cheese-code.core/eval7720$loading (form-init4410031889413635245.clj:1).
+; xml does not exist
+clj꞉the-divine-cheese-code.core꞉> 
+nil
+clj꞉the-divine-cheese-code.visualisation.svg꞉> 
+; Execution error (IllegalAccessError) at the-divine-cheese-code.core/eval7740$loading (form-init4410031889413635245.clj:1).
+; xml does not exist
+clj꞉the-divine-cheese-code.core꞉> 
+#'the-divine-cheese-code.core/-main
+clj꞉the-divine-cheese-code.core꞉> 

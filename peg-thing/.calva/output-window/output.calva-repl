@@ -15,38 +15,269 @@
 ;   - `alt+up` and `alt+down` traverse up and down the REPL command history
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉peg-thing.core꞉>  ; Use `alt+enter` to evaluate
+clj꞉peg-thing.core꞉> 
 ; Jack-in done.
 clj꞉peg-thing.core꞉> 
-; Syntax error compiling at (src/peg_thing/core.clj:215:18).
-; Unable to resolve symbol: render-board in this context
+#'peg-thing.core/print-board
 clj꞉peg-thing.core꞉> 
-; Evaluating file: core.clj
-; Syntax error macroexpanding clojure.core/ns at (src/peg_thing/core.clj:1:1).
-; ((require [clojure.set :as set]) (declare successful-move prompt-move game-over query-rows)) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
-
+; Execution error (ClassCastException) at peg-thing.core/print-board (form-init8036952636363686069.clj:216).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
 clj꞉peg-thing.core꞉> 
+#'peg-thing.core/print-board
 clj꞉peg-thing.core꞉> 
-; Syntax error compiling at (src/peg_thing/core.clj:215:18).
-; Unable to resolve symbol: render-board in this context
-clj꞉peg-thing.core꞉> 
-; Evaluating file: core.clj
-; Syntax error macroexpanding clojure.core/ns at (src/peg_thing/core.clj:1:1).
-; ((require [clojure.set :as set]) (declare successful-move prompt-move game-over query-rows)) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
-
-clj꞉peg-thing.core꞉> 
-clj꞉peg-thing.core꞉> 
-; Syntax error macroexpanding clojure.core/ns at (src/peg_thing/core.clj:1:1).
-; ((declare successful-move prompt-move game-over query-rows)) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-clj꞉peg-thing.core꞉> 
-; Evaluating file: core.clj
+          a0
+        b0  c0
+      d0  e0  f0
+    g0  h0  i0  j0
+  k0  l0  m0  n0  o0
+p0  q0  r0  s0  t0  u0
 nil
-clj꞉user꞉> 
-; Syntax error compiling at (src/peg_thing/core.clj:215:18).
-; Unable to resolve symbol: render-board in this context
 clj꞉peg-thing.core꞉> 
-; Syntax error compiling at (src/peg_thing/core.clj:215:18).
-; Unable to resolve symbol: render-board in this context
+          a-
+        b0  c0
+      d0  e-  f0
+    g0  h0  i-  j0
+  k0  l0  m0  n0  o0
+p0  q0  r0  s0  t0  u0
+nil
+clj꞉peg-thing.core꞉> 
+; Syntax error compiling at (src/peg_thing/core.clj:223:1).
+; Unable to resolve symbol: f in this context
+clj꞉peg-thing.core꞉> 
+; Execution error (IllegalArgumentException) at peg-thing.core/eval7528 (form-init8036952636363686069.clj:223).
+; Don't know how to create ISeq from: clojure.lang.Symbol
+clj꞉peg-thing.core꞉> 
+\d
+clj꞉peg-thing.core꞉> 
+; Execution error (ClassCastException) at peg-thing.core/eval7532 (form-init8036952636363686069.clj:223).
+; class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/letter->pos
+clj꞉peg-thing.core꞉> 
+3
+clj꞉peg-thing.core꞉> 
+1
+clj꞉peg-thing.core꞉> 
+1
+clj꞉peg-thing.core꞉> 
+1
+clj꞉peg-thing.core꞉> 
+2
+clj꞉peg-thing.core꞉> 
+; Syntax error compiling at (src/peg_thing/core.clj:227:16).
+; Unable to resolve symbol: trim in this context
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/get-input
+clj꞉peg-thing.core꞉> 
+"penis"
+clj꞉peg-thing.core꞉> 
+"jklj"
+clj꞉peg-thing.core꞉> 
+; Syntax error compiling at (src/peg_thing/core.clj:235:22).
+; No such var: clojure.string/contains
+clj꞉peg-thing.core꞉> 
+; Syntax error (ClassNotFoundException) compiling at (src/peg_thing/core.clj:235:22).
+; java.lang
+clj꞉peg-thing.core꞉> 
+; Syntax error (ClassNotFoundException) compiling at (src/peg_thing/core.clj:235:22).
+; Java.lang
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/characters-as-strings
+clj꞉peg-thing.core꞉> 
+; Error printing return value (ClassCastException) at clojure.string/includes? (string.clj:376).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉peg-thing.core꞉> 
+; Error printing return value (ClassCastException) at clojure.string/includes? (string.clj:376).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/letters
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/alpha-end
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/alpha-start
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/pos-chars
+clj꞉peg-thing.core꞉> 
+; Error printing return value (ClassCastException) at clojure.string/includes? (string.clj:376).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉peg-thing.core꞉> 
+; Error printing return value (ClassCastException) at clojure.string/includes? (string.clj:376).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/characters-as-strings
+clj꞉peg-thing.core꞉> 
+()
+clj꞉peg-thing.core꞉> 
+("asdf")
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/characters-as-strings
+clj꞉peg-thing.core꞉> 
+; Error printing return value (ClassCastException) at clojure.string/includes? (string.clj:376).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉peg-thing.core꞉> 
+; Syntax error compiling at (src/peg_thing/core.clj:239:1).
+; Unable to resolve symbol: seqw in this context
+clj꞉peg-thing.core꞉> 
+(\a \s \d \f)
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/characters-as-strings
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/characters-as-strings
+clj꞉peg-thing.core꞉> 
+; Error printing return value (ClassCastException) at peg-thing.core/characters-as-strings$fn (form-init8036952636363686069.clj:236).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉peg-thing.core꞉> 
+; Syntax error (IllegalArgumentException) compiling . at (src/peg_thing/core.clj:236:15).
+; No matching method isletter found taking 1 args for class java.lang.Character
+clj꞉peg-thing.core꞉> 
+; Syntax error (IllegalArgumentException) compiling . at (src/peg_thing/core.clj:236:15).
+; No matching method isletter found taking 1 args for class java.lang.Character
+clj꞉peg-thing.core꞉> 
+; Syntax error (IllegalArgumentException) compiling . at (src/peg_thing/core.clj:236:15).
+; No matching method isletter found taking 1 args for class java.lang.Character
+clj꞉peg-thing.core꞉> 
+#function[clojure.core/str]
+clj꞉peg-thing.core꞉> 
+; Syntax error (IllegalArgumentException) compiling . at (src/peg_thing/core.clj:236:15).
+; No matching method isletter found taking 1 args for class java.lang.Character
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/characters-as-strings
+clj꞉peg-thing.core꞉> 
+(\a \d \s \f)
+clj꞉peg-thing.core꞉> 
+(\a \d \s \f \z)
+clj꞉peg-thing.core꞉> 
+(\a \d \s \f \z)
+clj꞉peg-thing.core꞉> 
+(\a \d \s \f \z)
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/prompt-rows
+clj꞉peg-thing.core꞉> 
+35
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/prompt-rows
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/game-over
+clj꞉peg-thing.core꞉> 
+how many rows
+; Execution error (IllegalStateException) at peg-thing.core/prompt-rows (form-init8036952636363686069.clj:285).
+; Attempting to call unbound fn: #'peg-thing.core/prompt-move
+clj꞉peg-thing.core꞉> 
+; Syntax error compiling at (src/peg_thing/core.clj:273:5).
+; Unable to resolve symbol: prompt-empty-peg in this context
+clj꞉peg-thing.core꞉> 
+; Syntax error compiling at (src/peg_thing/core.clj:247:7).
+; Unable to resolve symbol: user-entered-valid-move in this context
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/user-entered-valid-move
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/user-entered-invalid-move
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/prompt-move
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/prompt-move
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/prompt-empty-peg
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/prompt-rows
+clj꞉peg-thing.core꞉> 
+#'peg-thing.core/game-over
+clj꞉peg-thing.core꞉> 
+how many rows
+here's your board
+        a0
+      b0  c0
+    d0  e0  f0
+  g0  h0  i0  j0
+k0  l0  m0  n0  o0
+what peg would you like to remove
+
+The board:
+        a0
+      b0  c0
+    d0  e-  f0
+  g0  h0  i0  j0
+k0  l0  m0  n0  o0
+what's your move? enter two letters
+; Execution error (IllegalArgumentException) at peg-thing.core/letter->pos (form-init8036952636363686069.clj:221).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉peg-thing.core꞉> 
+how many rows
+here's your board
+        a0
+      b0  c0
+    d0  e0  f0
+  g0  h0  i0  j0
+k0  l0  m0  n0  o0
+what peg would you like to remove
+
+The board:
+        a0
+      b0  c0
+    d0  e0  f0
+  g0  h0  i0  j0
+k0  l0  m0  n0  o0
+what's your move? enter two letters
+how many rows
+; Execution error (IllegalArgumentException) at peg-thing.core/letter->pos (form-init8036952636363686069.clj:221).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉peg-thing.core꞉> 
+No input provided.
+here's your board
+        a0
+      b0  c0
+    d0  e0  f0
+  g0  h0  i0  j0
+k0  l0  m0  n0  o0
+what peg would you like to remove
+
+The board:
+        a0
+      b0  c0
+    d0  e-  f0
+  g0  h0  i0  j0
+k0  l0  m0  n0  o0
+what's your move? enter two letters
+how many rows
+; Execution error (IllegalArgumentException) at peg-thing.core/letter->pos (form-init8036952636363686069.clj:221).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉peg-thing.core꞉> 
+here's your board
+        a0
+      b0  c0
+    d0  e0  f0
+  g0  h0  i0  j0
+k0  l0  m0  n0  o0
+what peg would you like to remove
+
+The board:
+        a-
+      b0  c0
+    d0  e0  f0
+  g0  h0  i0  j0
+k0  l0  m0  n0  o0
+what's your move? enter two letters
+how many rows
+; Execution error (IllegalArgumentException) at peg-thing.core/letter->pos (form-init8036952636363686069.clj:221).
+; Don't know how to create ISeq from: java.lang.Character
+clj꞉peg-thing.core꞉> 
+No input provided.
+here's your board
+        a0
+      b0  c0
+    d0  e0  f0
+  g0  h0  i0  j0
+k0  l0  m0  n0  o0
+what peg would you like to remove
+
+The board:
+        a0
+      b0  c0
+    d0  e-  f0
+  g0  h0  i0  j0
+k0  l0  m0  n0  o0
+what's your move? enter two letters
+how many rows
+; Execution error (IllegalArgumentException) at peg-thing.core/letter->pos (form-init8036952636363686069.clj:221).
+; Don't know how to create ISeq from: java.lang.Character
 clj꞉peg-thing.core꞉> 
